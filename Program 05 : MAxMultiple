@@ -1,0 +1,10 @@
+int maxMultiple(int divisor, int bound) 
+{
+    int output;
+    for(int i=1; i<=bound; i++)
+    {
+        if(i%divisor == 0)
+            output = i;
+    }
+    return output;
+}
