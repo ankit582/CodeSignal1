@@ -1,0 +1,24 @@
+int phoneCall(int min1, int min2_10, int min11, int s) 
+{
+    int duration =0;
+    if(s>=min1)
+        {
+            duration = 1;
+            s -= min1;
+        }
+    while(s>=min2_10)
+    {
+        duration++;
+        s -= min2_10;
+        if (duration == 10)
+            break;
+    }
+    if(duration<10)
+        return duration;
+    while(s>=min11)
+    {
+        duration++;
+        s -= min11;
+    }
+    return duration;
+}
