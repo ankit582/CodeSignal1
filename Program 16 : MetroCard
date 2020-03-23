@@ -1,0 +1,15 @@
+std::vector<int> metroCard(int lastNumberOfDays) 
+{
+    std::vector<int> output;
+    if(lastNumberOfDays == 28)
+        output.push_back(31);
+    else if(lastNumberOfDays == 30)
+        output.push_back(31);
+    else 
+    {
+        output.push_back(28);
+        output.push_back(30);
+        output.push_back(31);
+    }
+    return output;
+}
